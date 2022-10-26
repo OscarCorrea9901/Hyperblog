@@ -17,4 +17,10 @@ if (datetime.now().day <= 15):
     dueDate = "15 de " + datetime.now().strftime("%B")
 else:
     dueDate = str(calendar.monthrange(año,mes)[1]) + " de " + datetime.now().strftime("%B")
-print(dueDate)
+#print(dueDate)
+
+valor = 150342
+valor_en_peso_format = '{:1,d}'.format(valor)
+valor_en_texto ="$" + str(valor_en_peso_format).replace(',','.').replace(" ","")
+
+print(valor_en_texto)
