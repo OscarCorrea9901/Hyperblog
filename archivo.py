@@ -5,7 +5,7 @@ import pandas as pd
 
 # Creación DataFrame:
 #df_numeros = pd.DataFrame(diccionario)
-df_numeros = pd.read_csv('numeros.csv',";")
+df_numeros = pd.read_csv('numeros.csv',sep=";")
 # Guarda datos en CSV:
 #df_numeros.to_csv('numeros.csv', header=True, index=False, sep=';')
 print(df_numeros)
