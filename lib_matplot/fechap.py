@@ -19,8 +19,8 @@ else:
     dueDate = str(calendar.monthrange(año,mes)[1]) + " de " + datetime.now().strftime("%B")
 #print(dueDate)
 
-valor = 150342
+valor = 1050342
 valor_en_peso_format = '{:1,d}'.format(valor)
 valor_en_texto ="$" + str(valor_en_peso_format).replace(',','.').replace(" ","")
 
-print(valor_en_texto)
+print(valor_en_texto[0:10])
